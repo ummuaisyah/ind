@@ -1,0 +1,124 @@
+<!DOCTYPE html> 
+<html> 
+    <head>
+		<title>Welcome!</title>	
+        <link rel="stylesheet" type="text/css" href="home.css"> 
+    </head> 
+    <body> 
+		
+		<div class="divcenterss">
+		<div class="slideshow-container">
+
+			<div class="mySlides fade">
+			<div class="numbertext">1 / 3</div>
+				<img src="./gallery/ss1.jpg" style="width:100%">
+			<div class="text"></div>
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext">2 / 3</div>
+				<img src="./gallery/ss2.jpg" style="width:100%">
+			<div class="text"></div>
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext">3 / 3</div>
+				<img src="./gallery/ss3.jpg" style="width:100%">
+			<div class="text"></div>
+		</div>
+
+		</div>
+		<br>
+
+		<div style="text-align:center">
+			<span class="dot"></span> 
+			<span class="dot"></span> 
+			<span class="dot"></span> 
+		</div>
+		</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000); // Change image every 5 seconds
+}
+</script>
+		
+		<div>
+		<audio src="./gallery/bgm2.mp3"></audio>
+		<button id="button">
+		<i class="fas fa-volume-up"></i>
+		<img src="https://image.flaticon.com/icons/svg/482/482069.svg" height="30px" width="30px"/>
+		</button>
+		</div>
+		
+        <div class="divcenter container"> 
+            <div class="box"> 
+                <div class="box-row"> 
+                    <div class="box-cell box1">
+					<a href="profile.html">
+                    <img src="https://image.flaticon.com/icons/svg/2922/2922761.svg" width="200px" height="200px"/></br>Profile
+                    </a></div>
+					
+					<a href="skill.html">
+                    <div class="box-cell box2"> 
+					<img src="https://image.flaticon.com/icons/png/512/1077/1077147.png" width="200px" height="200px"/></br>Skills 
+                    </a></div> 
+                </div> 
+            </div> 
+        </div> 
+		<p></p>
+		
+		<div class="divcenter container"> 
+            <div class="box"> 
+                <div class="box-row"> 
+                    <div class="box-cell box1"> 
+					<a href="gallery.html">
+                    <img src="https://image.flaticon.com/icons/png/512/856/856256.png" width="200px" height="200px"/></br>Gallery
+					</a></div> 
+					
+					<a href="form.html">
+                    <div class="box-cell box2"> 
+                    <img src="https://image.flaticon.com/icons/svg/2665/2665051.svg" width="200px" height="200px"/></br>Feedback Form
+                    </a></div>
+					
+                </div> 
+            </div> 
+        </div>
+		<script>
+			const button = document.querySelector("#button");
+			const icon = document.querySelector("#button > i");
+			const audio = document.querySelector("audio");
+
+			button.addEventListener("click", () => {
+				if (audio.paused) {
+					audio.volume = 0.2;
+					audio.play();
+					icon.classList.remove('fa-volume-up');
+					icon.classList.add('fa-volume-mute');
+    
+				} else {
+					audio.pause();
+					icon.classList.remove('fa-volume-mute');
+					icon.classList.add('fa-volume-up');
+				}
+				button.classList.add("fade");
+				});
+		</script>
+    </body> 
+</html>                     

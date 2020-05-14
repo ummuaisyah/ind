@@ -1,0 +1,97 @@
+body{
+	padding-top:100px;
+	background:url(https://cdn.hipwallpaper.com/i/68/29/9SX7I6.jpg);
+	font-family:Arial;
+}
+h2, h3{
+	text-align:center;
+	color:gainsboro;
+}
+.divcenter{
+	width:50%;
+	margin:0 auto;
+	background-color: rgba(192,192,192,0.3);
+	padding-top:5px;
+	padding-left:100px;
+	padding-right:100px;
+}
+table {
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;}
+
+th, td {
+	text-align: center;
+	padding: 8px;
+		}
+		
+td:nth-child(odd){
+	width: 100px;
+	color:white;}
+		
+
+th {
+	background-color: teal;
+	color: white;
+	}
+/*progress bar */	
+.container {
+  width: 100%;
+  background:transparent;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: midnightblue;
+  background-color:paleturquoise;
+  font-family:Arial;
+}
+
+.html {width: 70%;}
+.css {width: 60%;}
+.js {width: 50%;}
+.php {width: 50%;}
+.cpp {width: 75%; }
+.java {width: 60%;}
+.ps {width: 70%;}
+.premier {width: 65%;}
+.bm {width: 80%; }
+.bi {width: 75%; }
+.jp {width: 55%;}
+.ar {width: 65%;}
+
+/*nav bar */
+ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: transparent;}
+
+	li {
+		float: left;
+		font-size:18px;
+		font-family:"Tahoma", Geneva, sans-serif }
+
+	li a {
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;}
+
+	li a:hover:not(.active) {
+		background-color: lightblue;
+		color:black;}
+
+	.active {
+		background-color: cadetblue;}
+		
+		
+	.topbar { 
+	position: fixed; 
+	top: 20px;
+	width:100%;}
+	

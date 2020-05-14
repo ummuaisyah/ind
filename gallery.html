@@ -1,0 +1,101 @@
+<html>
+<head>
+	<title>Gallery</title>
+	<link rel="stylesheet" type="text/css" href="gallery.css">
+	<script type="text/javascript"src="gallery.js"> 
+    </script> 
+	</head>
+	<body>
+	
+		<ul>
+			<li><a href="home.html">Home</a></li>
+			<li><a href="profile.html">Profile</a></li>
+			<li><b><a class="active" href="gallery.html">Gallery</a></b></li>
+			<li><a href="skill.html">Skills</a></li>
+			<li><a href="form.html">Feedback Form</a></li>
+		</ul>
+
+		<h2 style="text-align:center;font-size:30px;color:ivory;
+		font-family;Arial;">PAST SCHOOLS</h2>
+		
+	<div>
+	<div class="row">
+		<div class="column">
+		<img src="./gallery/1.jpg" style="width:250px; height:250" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+		</div>
+	<div class="column">
+		<img src="./gallery/2.jpg" style="width:250px; height:250" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+		</div>
+		
+	<div class="column">
+		<img src="./gallery/3.jpg" style="width:250px; height:250" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+		</div>
+		
+	<div class="column">
+		<img src="./gallery/4.jpg" style="width:250px; height:250" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+		</div>
+	</div>
+
+	<div id="myModal" class="modal">
+		<span class="close cursor" onclick="closeModal()">&times;</span>
+		<div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="./gallery/1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="./gallery/2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="./gallery/3.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="./gallery/4.jpg" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="./gallery/1.jpg" style="width:100%" onclick="currentSlide(1)" alt="SK Paka">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./gallery/2.jpg" style="width:100%" onclick="currentSlide(2)" alt="SMK Tengku Intan Zaharah">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./gallery/3.jpg" style="width:100%" onclick="currentSlide(3)" alt="SMK Sultan Sulaiman">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./gallery/4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Kolej Matrikulasi Pahang">
+    </div>
+
+	</div>
+	</div>
+	
+	<div class="divcenter">
+	<br>
+	<p style="text-align:center;font-size:30px;	color:ivory;
+		font-family;Arial;">A tutorial video on file compression
+	<br>for group assignment.</p>
+	
+		<video width="1000" controls>
+			<source src="./gallery/vid.mp4" type="video/mp4">
+			<source src="./gallery/vid.ogg" type="video/ogg">
+			Oops No can do.
+		</video>
+	</div>
+	</div>
+	</body>
+</html>
